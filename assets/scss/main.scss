@@ -1,0 +1,24 @@
+// var
+@import "var";
+// fonts
+@import "../fonts";
+// form
+@import "form";
+// components
+@import "components";
+// global
+@import "global";
+// helper
+@import "helper";
+// ui kit
+@import "ui-kit";
+// layouts
+@import "layouts";
+// pages
+@import "pages";
+body {
+    direction: rtl;
+    * {
+        transition: 0.3s all linear;
+    }
+}

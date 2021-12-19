@@ -1,0 +1,170 @@
+    html {
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .custom-container {
+        max-width: 1900px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .page-section {
+        padding-top: 7.5rem;
+        counter-reset: section 0;
+    }
+    
+    .intro-field {
+        .custom-container {
+            .row {
+                padding: 0 20vh !important;
+                @media screen and (max-width: 991px) {
+                    padding: 0px 65px !important;
+                }
+                @media screen and (max-width: 768px) {
+                    padding: 0px 20px !important;
+                }
+            }
+        }
+    }
+    
+    .numbered-header {
+        display: flex;
+        -webkit-box-align: flex-end;
+        align-items: flex-end;
+        position: relative;
+        margin: 10px 0px 40px;
+        width: 100%;
+        white-space: nowrap;
+        direction: ltr;
+        font-size: 32px;
+        color: var(--text-color__normal) !important;
+        @media screen and (max-width: 991px) {
+            font-size: 24px;
+        }
+        &::before {
+            position: relative;
+            bottom: 4px;
+            counter-increment: section 1;
+            content: "0"counter(section) ".";
+            margin-right: 10px;
+            color: var(--header-text__color__green);
+            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            top: -5px;
+            width: 70%;
+            height: 1px;
+            margin-left: 20px;
+            background-color: var(--lightest-navy);
+        }
+    }
+    /* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+    
+    .button.r {
+        box-sizing: content-box !important;
+        *,
+        *::before,
+        *::after {
+            box-sizing: content-box !important;
+        }
+    }
+    
+    .knobs,
+    .layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .button {
+        position: relative;
+        width: 74px;
+        height: 36px;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .button.r,
+    .button.r .layer {
+        border-radius: 100px;
+    }
+    
+    .button.b2 {
+        border-radius: 2px;
+    }
+    
+    .checkbox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .knobs {
+        z-index: 2;
+    }
+    
+    .layer {
+        width: 100%;
+        background-color: #ebf7fc;
+        transition: 0.3s ease all;
+        z-index: 1;
+    }
+    /* Button 7 */
+    
+    #button-2 .knobs:before,
+    #button-2 .knobs:after {
+        content: 'YES';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 30px;
+        height: 10px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        padding: 9px 4px;
+        background-color: #03A9F4;
+        border-radius: 30px;
+        transition: 0.3s ease all;
+    }
+    
+    #button-2 .knobs:before {
+        content: 'Dark';
+    }
+    
+    #button-2 .knobs:after {
+        content: 'Light';
+    }
+    
+    #button-2 .knobs:after {
+        right: -38px;
+        left: auto;
+        background-color: rgb(109, 131, 242);
+    }
+    
+    #button-2 .checkbox:checked+.knobs:before {
+        left: -38px;
+    }
+    
+    #button-2 .checkbox:checked+.knobs:after {
+        right: 4px;
+    }
+    
+    #button-2 .checkbox:checked~.layer {
+        background-color: rgb(48, 48, 48);
+    }
