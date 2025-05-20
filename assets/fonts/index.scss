@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "iransans";
+    src: url(./assets/fonts/IRANSansX-Regular.ttf);
+}
+
+@font-face {
+    font-family: "iransans-bold";
+    src: url(./assets/fonts/IRANSansX-Bold.ttf);
+}
+
+@font-face {
+    font-family: "iransans-medium";
+    src: url(./assets/fonts/IRANSansX-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-regular";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: local("Montserrat Regular "), local("Montserrat-Regular"), url(./assets/fonts/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat-regular__italic";
+    font-style: italic;
+    font-display: swap;
+    font-weight: 400;
+    src: local("Montserrat Regular italic"), local("Montserrat-Regularitalic"), url(./assets/fonts/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: local("Montserrat Bold "), local("Montserrat-Bold"), url(./assets/fonts/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),
+}
+
+@font-face {
+    font-family: "Montserrat-black";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+    src: local("Montserrat Black "), local("Montserrat-Black"), url(./assets/fonts/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: "Montserrat-black__italic";
+    font-style: italic;
+    font-display: swap;
+    font-weight: 900;
+    src: local("Montserrat Black italic"), local("Montserrat-Blackitalic"), url(./assets/fonts/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2")
+}
